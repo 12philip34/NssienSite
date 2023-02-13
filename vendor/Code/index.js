@@ -1,11 +1,14 @@
-function sendEmail() {
+let submitBtn = document.getElementById("button");
+submitBtn.addEventListener('click', function(e) {
+  e.preventDefault();
+  let subject = document.getElementById('textArea');
   Email.send({
     Host: "smtp.gmail.com",
     Username: "nssienphilip@gmail.com",
-    Password: "kbohwzbtvekmnrbn",
+    Password: "ffilehaauynxwyhz",
     To: 'nssienphilip@gmail.com',
     From: document.getElementById('yourEmail').value,
-    Subject: "New Contact Form Enquiry",
+    Subject: subject,
     Body: "Name:" + document.getElementById('yourName').value
       + '<br> Email:' + document.getElementById('yourEmail').value
       + '<br> Message:' + document.getElementById('textArea').value
@@ -13,9 +16,4 @@ function sendEmail() {
   }).then(
     message => alert('Message Sent Successful!!')
   );
-
-}
-
-var form = document.getElementById("myForm");
-function handleForm(event) { event.preventDefault(); } 
-form.addEventListener('submit', handleForm);
+})

@@ -384,6 +384,7 @@ body {
   border: 1px solid #222;
   border-radius: 35px;
   position: relative;
+  overflow: hidden;
 }
 
 .videoSpan {
@@ -604,6 +605,31 @@ servicesBox .card:hover .content h2 {
   transition: 0.5s;
 }
 
+.viewSite{
+  position: absolute;
+  left: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.753);
+  width: 100%;
+  height: 200px;
+  top: -200px;
+  border-radius: 30px;
+  padding: 40px 0;
+}
+
+.viewSite a{
+  color: var(--color);
+  text-decoration: none;
+}
+
+.viewSite a:hover{
+  color: var(--blue);
+}
+
+.cardContent:hover .viewSite{
+  top: 0px;
+}
+
 
 
 .servicesBox .card span:nth-child(1) {
@@ -757,7 +783,7 @@ servicesBox .card:hover .content h2 {
   border-bottom: 1px solid #994f06;
   border-right: none;
   border-left: none;
-  outline: none;  
+  outline: none;
   color: #ccc;
 }
 
@@ -775,7 +801,7 @@ servicesBox .card:hover .content h2 {
   align-items: center;
 }
 
-.button{
+.button {
   padding: 20px;
   border: 10px;
   color: var(--color);
@@ -785,13 +811,13 @@ servicesBox .card:hover .content h2 {
   cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
   color: var(--blue);
   background: transparent;
   border: 1px solid var(--blue);
 }
 
-textarea{
+textarea {
   padding: 10px;
   border-radius: 5px;
   background: var(--current-color2);
@@ -851,10 +877,18 @@ textarea{
   .introduction .introductionRight .profileImg {
     margin-top: 30px;
   }
-.contactForm{
-  grid-template-columns: 1fr;
-}
 
+  .contactForm {
+    grid-template-columns: 1fr;
+  }
+
+  .introduction .introductionLeft h3 {
+    font-size: 4rem;
+  }
+
+  .introduction .introductionLeft p {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (min-width: 422px) and (max-width: 768px) {
