@@ -76,7 +76,6 @@ body {
 }
 
 .introduction .introductionRight .profileImg {
-  padding: 20px;
   width: 200px;
   height: 200px;
   border: 1px dashed #ccc;
@@ -90,6 +89,7 @@ body {
 
 .introduction .introductionRight .profileImg img {
   width: 100%;
+  border-radius: 50%;
 }
 
 
