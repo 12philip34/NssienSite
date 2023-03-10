@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nssien Philip</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="../../vendor/Code/style.css" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Rancho&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="shortcut icon"
+          href="./vendor/Asset/image/C.png"
+          type="image/x-icon"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+      </head>
+
+      <body>
+        <div class="containerContact">
+          <section class="contact">
+            <div class="contactMe">
+              <span class="getIntouch">
+                <h1>
+                  let's get intouch <br />
+                  either by <strong>mail</strong> or social
+                  <strong>media</strong>
+                </h1>
+                <label>
+                  <img
+                    src="../../vendor/Asset/image/signal.gif"
+                    alt="signal"
+                    class="signal"
+                  />
+                  <span class="socialLinks">
+                    <a href="">
+                      <img src="../../vendor/Asset/image/lk.gif" alt=""
+                    /></a>
+                    <a href=""
+                      ><img src="../../vendor/Asset/image/tw.gif" alt=""
+                    /></a>
+                    <a href=""
+                      ><img src="../../vendor/Asset/image/me.png" alt=""
+                    /></a>
+                    <a href=""
+                      ><img src="../../vendor/Asset/image/yt.gif" alt=""
+                    /></a>
+                  </span>
+                </label>
+              </span>
+              <span class="messageBox">
+                <div class="div">
+                  <label class="inputBox">
+                    <span>
+                      <label for="name">Name</label>
+                      <input type="text" id="name" />
+                    </span>
+                    <span>
+                      <label for="email">Email</label>
+                      <input type="text" id="email" />
+                    </span>
+                  </label>
+                  <label class="messageContent">
+                    <label for="message">Message</label>
+                    <textarea name="" id="message"></textarea>
+                  </label>
+                  <a href="">Message Me!</a>
+                </div>
+              </span>
+            </div>
+          </section>
+          <section class="navBar" id="showBar">
+            <div id="toggle"></div>
+            <nav id="navBar">
+              <a href="/index.html" class="homeLink">Philip Nssien</a>
+              <ul>
+                <li><a href="../AboutMe/index.html">About Me</a></li>
+                <li><a href="../ContactMe/index.html">Contact Me</a></li>
+                <li><a href="">Some Designs</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Blogs</a></li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+      </body>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script src="./script.js"></script>
+      <script>
+        //TOGGLE MENU BAR
+        const toggle = document.getElementById("toggle");
+        const navBar = document.getElementById("navBar");
+
+        toggle.onclick = function () {
+          toggle.classList.toggle("active");
+          navBar.classList.toggle("active");
+        };
+      </script>
+    </html>
+  </body>
+</html>

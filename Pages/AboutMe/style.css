@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --blue: #ea7f15;
+  --black: #161616;
+  --light-color: #777;
+  --color: #fff;
+  --background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.815));
+}
+
+.containerAbout {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--background), url(../../vendor/Asset/image/about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.308);
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+.aboutMe {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  grid-template: 30px;
+  padding: 20px;
+}
+
+.aboutMe h1 span {
+  color: #ea7f15;
+}
+
+.aboutMe p {
+  color: #bbbbbb;
+  font-size: 15px;
+  margin: 20px 0;
+}
+
+.aboutMe p:nth-child(3) {
+  margin-bottom: 30px;
+}
+
+.myWaysAboutMe {
+  width: 100%;
+  height: 100%;
+  padding-left: 20%;
+}
+
+.myWaysAboutMe label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.myWaysAboutMe label span h2 {
+  margin: 0;
+  color: #856340;
+  font-size: 18px;
+}
+
+.myWaysAboutMe label span p {
+  font-size: 14px;
+  color: #bbbbbb;
+  margin-top: 0;
+}
+
+.myWaysAboutMe label span img {
+  width: 30px;
+}
+
+.findOutMore {
+  color: #ea7f15;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #e29e5a;
+  margin-top: 30px;
+  transition: 0.2s;
+}
+
+.findOutMore:hover {
+  color: whitesmoke;
+  background: #e29e5a41;
+}
+
+small {
+  padding: 220px;
+  border: 1px solid #e29e5a41;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: -60px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    height: 100%;
+  }
+  .aboutMe {
+    height: 100%;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .myWaysAboutMe {
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    margin-top: 50px;
+    border-top: 2px solid #e29e5a;
+  }
+
+  .myWaysAboutMe label span p {
+    font-size: 15px;
+    color: #777;
+    margin-top: 0;
+  }
+}

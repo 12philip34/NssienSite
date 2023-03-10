@@ -1,19 +1,65 @@
-let submitBtn = document.getElementById("button");
-submitBtn.addEventListener('click', function(e) {
-  e.preventDefault();
-  let subject = document.getElementById('textArea');
-  Email.send({
-    Host: "smtp.gmail.com",
-    Username: "nssienphilip@gmail.com",
-    Password: "ffilehaauynxwyhz",
-    To: 'nssienphilip@gmail.com',
-    From: document.getElementById('yourEmail').value,
-    Subject: subject,
-    Body: "Name:" + document.getElementById('yourName').value
-      + '<br> Email:' + document.getElementById('yourEmail').value
-      + '<br> Message:' + document.getElementById('textArea').value
+var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
 
-  }).then(
-    message => alert('Message Sent Successful!!')
-  );
-})
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+
+//TOGGLE MENU BAR
+const toggle = document.getElementById('toggle');
+const navBar = document.getElementById('navBar');
+
+toggle.onclick = function () {
+  toggle.classList.toggle("active");
+  navBar.classList.toggle("active");
+}
