@@ -134,21 +134,23 @@
   outline: #75431175;
 }
 
-.contactMe a {
+.contactMe button {
   width: 100%;
   padding: 10px 20px;
   text-align: center;
   color: #ea7f15;
   text-decoration: none;
   border: 1px solid #ea7f15;
+  background: transparent;
 }
 
 
-.contactMe a:hover{
+.contactMe button:hover{
     color: #fff;
     text-decoration: none;
     border: 1px solid #ea7f15;
     background: #8058314d;
+    cursor: pointer;
   }
 
   .socialLinks{

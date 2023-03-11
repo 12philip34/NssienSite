@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  :root {
+    --blue: #ea7f15;
+    --black: #161616;
+    --light-color: #777;
+    --color: #fff;
+    --background: linear-gradient(rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.904));
+  }
+  
+  .containerProtfolio {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    background: var(--background), url(../../vendor/Asset/image/phone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .protfolio {
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.473);
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .protfolio .contentBox {
+    padding-left: 20px;
+  }
+  
+  .protfolio .contentBox h1 {
+    color: whitesmoke;
+    margin-bottom: 20px;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+  
+  .protfolio .contentBox small {
+      color: #ea7f15;
+      border: 1px solid #ea7f15;
+      padding: 10px 20px;
+    }
+  .protfolio .imageBox {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0 10% 0;
+  }  
+
+  .protfolio .imageBox a {
+    padding: 10px 30px;
+    color: #ea7f15;
+    border: 1px solid #ea7f15;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .protfolio .imageBox a:hover{
+    padding: 10px 30px;
+    background: #ea801534;
+    border: 1px solid #ea7f15;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  @media only screen and (max-width: 768px){
+      .containerProtfolio {
+          width: 100%;
+          height: 100vh;
+         
+        }
+        
+        .protfolio {
+          width: 100%;
+          min-height: 100%;
+          display: grid;
+          grid-template-columns: 1fr;
+        }   
+  
+        .protfolio .imageBox {
+          width: 100%;
+          height: 100%;
+          display: grid;
+          grid-template-columns: 1fr;
+          padding: 10%;
+        }
+  
+        .protfolio .contentBox {
+          padding: 2  0px;
+        }
+
+        .protfolio .contentBox h1 {
+            color: whitesmoke;
+            margin-bottom: 20px;
+            font-size: 3rem;
+            text-transform: uppercase;
+          }
+  }
+  

@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --blue: #ea7f15;
+  --black: #161616;
+  --light-color: #777;
+  --color: #fff;
+  --background: linear-gradient(rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.904));
+}
+
+.containerProtfolio {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--background), url(../../vendor/Asset/image/designs.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.protfolio {
+  width: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.473);
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.protfolio .contentBox {
+  padding-left: 20px;
+}
+
+.protfolio .contentBox h1 {
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+
+.protfolio .contentBox small {
+    color: #ea7f15;
+    border: 1px solid #ea7f15;
+    padding: 10px 20px;
+  }
+.protfolio .imageBox {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 10% 0 10% 0;
+}
+
+.protfolio .imageBox span {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box !important;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.protfolio .imageBox span a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 99%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.473);
+  color: whitesmoke;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.protfolio .imageBox span:hover a {
+  top: 0;
+}
+
+.protfolio .imageBox img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px){
+    .containerProtfolio {
+        width: 100%;
+        height: 100%;
+       
+      }
+      
+      .protfolio {
+        width: 100%;
+        min-height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+      }   
+
+      .protfolio .imageBox {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        margin-top: 30px;
+      }
+
+      .protfolio .contentBox {
+        padding: 2  0px;
+        margin-top: 40px;
+      }
+      .protfolio .contentBox h1 {
+        color: whitesmoke;
+        margin-bottom: 20px;
+        font-size: 2.3em;
+      }
+}

@@ -1,0 +1,122 @@
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nssien Philip</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="../../vendor/Code/style.css" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Rancho&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="shortcut icon" href="../../vendor/Asset/image/logo.png" type="image/x-icon">
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+      </head>
+      <body>
+        <div class="containerProtfolio">
+          <section class="protfolio">
+            <div class="contentBox">
+              <h1>
+                Take a look at what I've <br />
+                created and get <br />
+                inspired by.
+              </h1> 
+              <small title="hover on Image">See More</small>
+            </div>
+            <div class="imageBox">
+              <span>
+                <a href="https://airbnbs.vercel.app" target="_blank">View Site</a>
+                <img src="../../vendor/Asset/image/air.png" alt="airbnb.png" />
+              </span>
+              <span>
+                <a href="https://c21fg.vercel.app" target="_blank">View Site</a>
+                <img src="../../vendor/Asset/image/c21.png" alt="c21fg.png" />
+              </span>
+              <span>
+                  <a href="https://bigjo-concierge.vercel.app" target="_blank">View Site</a>
+                <img
+                  src="../../vendor/Asset/image/big.png"
+                  alt="bigjo-concierge.png"
+                />
+              </span>
+              <span>
+                  <a href="https://la-boutique.vercel.app" target="_blank">View Site</a>
+                <img
+                  src="../../vendor/Asset/image/la.png"
+                  alt="la-boutique.png"
+                />
+              </span>
+              <span>
+                  <a href="https://coingego.vercel.app" target="_blank">View Site</a>
+                <img
+                  src="../../vendor/Asset/image/coin.png"
+                  alt="coingego.png"
+                />
+              </span>
+              <span>
+                  <a href="https://chariheal.vercel.app" target="_blank">View Site</a>
+                <img
+                  src="../../vendor/Asset/image/chari (1).png"
+                  alt="chariheal.png"
+                />
+              </span>
+              <span>
+                  <a href="https://hypefarm.io" target="_blank">View Site</a>
+                <img
+                  src="../../vendor/Asset/image/hype.png"
+                  alt="hypefarm.png"
+                />
+              </span>
+              <span>
+                  <a href="https://cookiesdina.vercel.app/" target="_blank">View Site</a>
+                <img
+                  src="../../vendor/Asset/image/tail.png"
+                  alt="tailorme.png"
+                />
+              </span>
+              <span>
+                  <a href="https://emerix.vercel.app" target="_blank">View Site</a> 
+                <img
+                  src="../../vendor/Asset/image/cal.png"
+                  alt="increment.png"
+                />
+              </span>
+            </div>
+          </section>
+          <section class="navBar" id="showBar">
+            <div id="toggle"></div>
+            <nav id="navBar">
+              <a href="/index.html" class="homeLink">Philip Nssien</a>
+              <ul>
+                <li><a href="../AboutMe/index.html">About Me</a></li>
+                <li><a href="../Porfolio/index.html">Some Designs</a></li>
+                <li><a href="../Youready/index.html">You Ready!</a></li>
+                <li><a href="../ContactMe/index.html">Contact Me</a></li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+      </body>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script>
+        //TOGGLE MENU BAR
+        const toggle = document.getElementById("toggle");
+        const navBar = document.getElementById("navBar");
+
+        toggle.onclick = function () {
+          toggle.classList.toggle("active");
+          navBar.classList.toggle("active");
+        };
+      </script>
+</html>

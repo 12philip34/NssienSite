@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
-  </head>
-  <body>
     <!DOCTYPE html>
     <html lang="en">
       <head>
@@ -16,6 +7,7 @@
         <title>Nssien Philip</title>
         <link rel="stylesheet" href="./style.css" />
         <link rel="stylesheet" href="../../vendor/Code/style.css" />
+        <link rel="shortcut icon" href="../../vendor/Asset/image/logo.png" type="image/x-icon">
         <link
           href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"
           rel="stylesheet"
@@ -25,11 +17,6 @@
         <link
           href="https://fonts.googleapis.com/css2?family=Rancho&display=swap"
           rel="stylesheet"
-        />
-        <link
-          rel="shortcut icon"
-          href="./vendor/Asset/image/C.png"
-          type="image/x-icon"
         />
         <link
           rel="stylesheet"
@@ -54,39 +41,39 @@
                     class="signal"
                   />
                   <span class="socialLinks">
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/philip-nssien/">
                       <img src="../../vendor/Asset/image/lk.gif" alt=""
                     /></a>
-                    <a href=""
+                    <a href="https://twitter.com/Nssienphilip"
                       ><img src="../../vendor/Asset/image/tw.gif" alt=""
                     /></a>
-                    <a href=""
+                    <a href="https://medium.com/@Nssienphilip4"
                       ><img src="../../vendor/Asset/image/me.png" alt=""
                     /></a>
-                    <a href=""
+                    <a href="https://youtu.be/i7Uzmm-5S3A"
                       ><img src="../../vendor/Asset/image/yt.gif" alt=""
                     /></a>
                   </span>
                 </label>
               </span>
               <span class="messageBox">
-                <div class="div">
+                <form class="div" action="https://getform.io/f/a40aacce-2dbb-49d3-b78e-8b9e96195c6e" method="post">
                   <label class="inputBox">
                     <span>
                       <label for="name">Name</label>
-                      <input type="text" id="name" />
+                      <input type="text" id="name" name="name" />
                     </span>
                     <span>
                       <label for="email">Email</label>
-                      <input type="text" id="email" />
+                      <input type="text" id="email" name="email" />
                     </span>
                   </label>
                   <label class="messageContent">
                     <label for="message">Message</label>
-                    <textarea name="" id="message"></textarea>
+                    <textarea name="textarea" id="message"></textarea>
                   </label>
-                  <a href="">Message Me!</a>
-                </div>
+                  <button value="submit" type="submit" >Message Me!</button>
+                </form>
               </span>
             </div>
           </section>
@@ -96,10 +83,9 @@
               <a href="/index.html" class="homeLink">Philip Nssien</a>
               <ul>
                 <li><a href="../AboutMe/index.html">About Me</a></li>
+                <li><a href="../Porfolio/index.html">Some Designs</a></li>
+                <li><a href="../Youready/index.html">You Ready!</a></li>
                 <li><a href="../ContactMe/index.html">Contact Me</a></li>
-                <li><a href="">Some Designs</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Blogs</a></li>
               </ul>
             </nav>
           </section>
@@ -117,6 +103,4 @@
           navBar.classList.toggle("active");
         };
       </script>
-    </html>
-  </body>
 </html>

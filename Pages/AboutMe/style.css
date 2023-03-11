@@ -18,7 +18,7 @@
   height: 100%;
   position: relative;
   overflow-x: hidden;
-  background: var(--background), url(../../vendor/Asset/image/about.jpg);
+  background: #050505;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -81,7 +81,7 @@
 
 .myWaysAboutMe label span p {
   font-size: 14px;
-  color: #bbbbbb;
+  color: #eeeeee;
   margin-top: 0;
 }
 
@@ -114,6 +114,19 @@ small {
   height: 250px;
   position: absolute;
   left: -60px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+strong {
+  padding: 220px;
+  background:#5a442f11;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  right: -60px;
+  top: -20px;
   z-index: 1;
   overflow: hidden;
 }
